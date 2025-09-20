@@ -64,5 +64,5 @@ if uploaded_file is not None:
     predicted_class, confidence = predict_rock(img, model)
     
     st.write(f"**Predicción:** {predicted_class}")
-    st.write(f"**Confianza:** {confidence}%")
+    st.write(f"**Confianza:** {confidence:.2f}%")
     st.success("¡Clasificación completada!")
