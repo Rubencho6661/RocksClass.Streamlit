@@ -23,7 +23,7 @@ st.write("Sube una imagen de roca y el modelo te dirá a qué clase pertenece.")
 # Parámetros del modelo
 # ---------------------------
 IMAGE_SIZE = 224  # cambiar al tamaño usado en tu entrenamiento
-model_path = "D:/Maestria_AI/ProyectoFinal2/ClasificadorRocas/Streamlit/rock_classifier_model_tl.h5"  # ruta al modelo guardado
+model_path = "D:/Maestria_AI/ProyectoFinal2/ClasificadorRocas/RocksClass.Streamlit/rock_classifier_model_tl.h5"  # ruta al modelo guardado
 class_names = ['Arenisca', 'Basalto', 'Caliza', 'Cuarcita', 'Granito', 'Marmol'] # reemplaza por tus clases reales
 
 # ---------------------------
@@ -58,7 +58,7 @@ uploaded_file = st.file_uploader("Elige una imagen", type=["jpg","jpeg","png"])
 
 if uploaded_file is not None:
     img = Image.open(uploaded_file)
-    st.image(img, caption="Imagen subida", use_column_width=True)
+    st.image(img, caption="Imagen subida", use_container_width=True)
     
     predicted_class, confidence = predict_rock(img, model)
     
