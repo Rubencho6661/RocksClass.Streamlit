@@ -23,7 +23,8 @@ st.write("Sube una imagen de roca y el modelo te dirá a qué clase pertenece.")
 # Parámetros del modelo
 # ---------------------------
 IMAGE_SIZE = 224  # cambiar al tamaño usado en tu entrenamiento
-model_path = "D:/Maestria_AI/ProyectoFinal2/ClasificadorRocas/RocksClass.Streamlit/rock_classifier_model_tl.h5"  # ruta al modelo guardado
+model_path = "rock_classifier_model_tl.h5"
+#model_path = "D:/Maestria_AI/ProyectoFinal2/ClasificadorRocas/RocksClass.Streamlit/rock_classifier_model_tl.h5"  # ruta al modelo guardado
 class_names = ['Arenisca', 'Caliza', 'Carbon', 'Granito'] # reemplaza por tus clases reales
 
 # ---------------------------
